@@ -46,6 +46,14 @@ public static void main(String[] args) {
         System.out.println("Spelaren har nu följande häsla kvar: \n" + player.getHealth());
         System.out.println("Det gigantiska grodmonstret har nu följande hälsa kvar: \n" + giantToad.getHealth());
 
+        System.out.println("Spelaren tycker att det är lite väl tungt med så många saker i väskan, han kastar ut pilbågen och hjälmen");
+
+        player.inventory.removeItem(magicBow);
+        player.inventory.removeItem(bronzeHelmet);
+
+        System.out.println("Spelaren har nu följande föemål i väskan: ");
+        player.inventory.getItems();
+
     }
 }
 
