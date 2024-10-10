@@ -6,14 +6,14 @@ import items.weapon.MagicBow;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Inventory<T>  {
-    public List<T> items = new ArrayList<>();
+public class Inventory<Item>  {
+    public List<Item> items = new ArrayList<>();
 
     public Inventory() {
         this.items = new ArrayList();
     }
 
-    public void addItem(T item) {  
+    public void addItem(Item item) {  
         items.add(item);
         
     }
@@ -33,7 +33,7 @@ public class Inventory<T>  {
         
     }
 
-    public void removeItem(T item) {
+    public void removeItem(Item item) {
         this.items.removeIf(x -> x.equals(item));
     }
 
